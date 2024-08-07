@@ -10,9 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <style>
-        .navB{
+        .navB {
             background-color: #09437ed3;
         }
+
         body {
             padding-top: 56px;
         }
@@ -138,6 +139,7 @@
         .likes i {
             margin-right: 5px;
         }
+
         .service-box {
             background-color: #ffffff;
             border-radius: 10px;
@@ -145,20 +147,24 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .service-box:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
+
         .service-box i {
             font-size: 3rem;
             color: #007bff;
             margin-bottom: 15px;
         }
+
         .section-heading {
             font-size: 2.5rem;
             font-weight: 700;
             color: #343a40;
         }
+
         .text-muted {
             color: #6c757d !important;
         }
@@ -166,50 +172,52 @@
 </head>
 
 <body>
-   <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navB navbar-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-         <h4 class="m-0 p-0 text-bold">MachCode</h4>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navB navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h4 class="m-0 p-0 text-bold">MachCode</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <!-- Masthead -->
     <header class="masthead">
-        <div class="container ">
-            <h2>C'est Machaallah le codeur</h2>
-            <h1>Bienvenue sur mon site de développeur</h1>
-            <p>Je crée des solutions web modernes et performantes</p>
-            <a href="#services" class="btn btn-primary btn-lg">Découvrez mes services</a>
+        <div class="container text-center">
+            <h2>Bienvenue sur le site de MachCode</h2>
+            <h1>Votre Solution Web Innovante</h1>
+            <p>Nous sommes une équipe de développeurs passionnés, dédiés à créer des solutions web modernes et
+                performantes.</p>
+            <a href="#services" class="btn btn-primary btn-lg">Découvrez nos services</a>
         </div>
     </header>
+
 
     <!-- Services Section -->
     <section class="services bg-light py-5" id="services">
@@ -426,32 +434,37 @@
                     <!-- Informations de contact -->
                     <div class="text-center mb-4">
                         <p class="mb-1"><i class="fas fa-phone-alt"></i> Téléphone : +228 92 21 82 07</p>
-                        <p><i class="fas fa-envelope"></i> E-mail : <a href="mailto:machaallahadjibogou@gmail.com">machaallahadjibogou@gmail.com</a></p>
+                        <p><i class="fas fa-envelope"></i> E-mail : <a
+                                href="mailto:machaallahadjibogou@gmail.com">machaallahadjibogou@gmail.com</a></p>
                     </div>
-    
+
                     <!-- Formulaire de contact -->
                     <form id="contactForm" name="sentMessage" action="https://your-emailjs-endpoint" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Votre nom *" required="required"
+                                    <input class="form-control" id="name" name="name" type="text"
+                                        placeholder="Votre nom *" required="required"
                                         data-validation-required-message="Veuillez entrer votre nom." />
                                     <div class="invalid-feedback">Veuillez entrer votre nom.</div>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" name="email" type="email" placeholder="Votre email *" required="required"
+                                    <input class="form-control" id="email" name="email" type="email"
+                                        placeholder="Votre email *" required="required"
                                         data-validation-required-message="Veuillez entrer votre email." />
                                     <div class="invalid-feedback">Veuillez entrer votre email.</div>
                                 </div>
                                 <div class="form-group mb-md-0">
-                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Votre téléphone *" required="required"
+                                    <input class="form-control" id="phone" name="phone" type="tel"
+                                        placeholder="Votre téléphone *" required="required"
                                         data-validation-required-message="Veuillez entrer votre numéro de téléphone." />
                                     <div class="invalid-feedback">Veuillez entrer votre numéro de téléphone.</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-group-textarea mb-md-0">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Votre message *" required="required"
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Votre message *" required="required"
                                         data-validation-required-message="Veuillez entrer un message."></textarea>
                                     <div class="invalid-feedback">Veuillez entrer un message.</div>
                                 </div>
@@ -469,9 +482,9 @@
             </div>
         </div>
     </section>
-    
-    
-    
+
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -479,9 +492,18 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-left">© 2024 Machaallah le codeur</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Social Media Links -->
+                    <a class="btn btn-dark btn-social mx-2"
+                        href="https://www.instagram.com/i_m_machaallah?igsh=cWtjZHZuMGw1ejJz&utm_source=qr"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2"
+                        href="https://www.linkedin.com/in/adjibogou-machaallah-32937126a" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
                 </div>
                 <div class="col-lg-4 text-lg-right">
                     <a class="mr-3" href="#">Politique de confidentialité</a>
@@ -538,24 +560,24 @@
     </script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-      // Remplacez 'your-public-key' par votre clé publique EmailJS
-      (function() {
-        emailjs.init("your-public-key");
-      })();
-    
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        emailjs.sendForm('your-service-id', 'your-template-id', this)
-          .then(function() {
-            alert('Message envoyé avec succès!');
-          }, function(error) {
-            alert('Erreur lors de l\'envoi du message: ' + JSON.stringify(error));
-          });
-      });
+        // Remplacez 'your-public-key' par votre clé publique EmailJS
+        (function () {
+            emailjs.init("your-public-key");
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('your-service-id', 'your-template-id', this)
+                .then(function () {
+                    alert('Message envoyé avec succès!');
+                }, function (error) {
+                    alert('Erreur lors de l\'envoi du message: ' + JSON.stringify(error));
+                });
+        });
     </script>
-    
-    
+
+
 
 </body>
 

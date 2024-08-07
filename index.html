@@ -1,71 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Site de Machaallah</title>
+    <title>Accueil - Machcode</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <style>
+        .navB{
+            background-color: #09437ed3;
+        }
         body {
             padding-top: 56px;
         }
+
         .masthead {
-            background: #007bff;
+            background: url('ca5.png') no-repeat center center;
+            background-size: cover;
             color: white;
             padding: 100px 0;
             text-align: center;
         }
+
         .masthead h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             margin-bottom: 0.5rem;
         }
+
         .masthead p {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-        .services, .portfolio {
+
+        .section-heading {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        .services,
+        .portfolio,
+        .blog,
+        .contact {
             padding: 50px 0;
         }
+
         .footer {
             background: #f8f9fa;
             padding: 20px 0;
             text-align: center;
         }
+
+        .service-box i,
+        .portfolio-item i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-item {
+            border: 1px solid #e3e3e3;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-item:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-caption {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .blog-caption h4 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        .blog-caption p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-meta i {
+            margin-right: 5px;
+        }
+
+        .like-btn {
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #007bff;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .like-btn:hover {
+            color: #0056b3;
+        }
+
+        .like-btn i {
+            margin-right: 5px;
+        }
+
+        .img-fluid {
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .likes {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .likes i {
+            margin-right: 5px;
+        }
+        .service-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .service-box i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #343a40;
+        }
+        .text-muted {
+            color: #6c757d !important;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Développeur</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navB navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+         <h4 class="m-0 p-0 text-bold">MachCode</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Masthead -->
     <header class="masthead">
-        <div class="container">
+        <div class="container ">
             <h2>C'est Machaallah le codeur</h2>
             <h1>Bienvenue sur mon site de développeur</h1>
             <p>Je crée des solutions web modernes et performantes</p>
@@ -74,32 +212,32 @@
     </header>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services bg-light py-5" id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center mb-4">
                     <h2 class="section-heading">Mes Services</h2>
                     <hr class="my-4">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-4x fa-gem text-primary mb-3"></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box text-center mx-auto bg-light">
+                        <i class="fas fa-gem"></i>
                         <h3 class="mb-3">Développement Web</h3>
                         <p class="text-muted mb-0">Création de sites web modernes et responsives.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-4x fa-laptop-code text-primary mb-3"></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box text-center mx-auto">
+                        <i class="fas fa-laptop-code"></i>
                         <h3 class="mb-3">Applications Mobiles</h3>
                         <p class="text-muted mb-0">Développement d'applications mobiles intuitives.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-4x fa-cloud text-primary mb-3"></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box text-center mx-auto">
+                        <i class="fas fa-cloud"></i>
                         <h3 class="mb-3">Solutions Cloud</h3>
                         <p class="text-muted mb-0">Mise en place de solutions cloud sécurisées.</p>
                     </div>
@@ -121,33 +259,73 @@
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
                         <a class="portfolio-link" href="#">
-                            <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                            <img class="img-fluid" src="pexels-shkrabaanthony-5810700.jpg" alt="Projet 1">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Projet 1</h4>
-                            <p class="text-muted">Description du projet</p>
+                            <h4>Site E-commerce</h4>
+                            <p class="text-muted">Un site de vente en ligne avec une gestion complète des produits, des
+                                commandes et des paiements. <a href="#" class="btn btn-link">Voir la démo</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
                         <a class="portfolio-link" href="#">
-                            <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                            <img class="img-fluid" src="ca3.png" alt="Projet 2">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Projet 2</h4>
-                            <p class="text-muted">Description du projet</p>
+                            <h4>Application Mobile</h4>
+                            <p class="text-muted">Une application mobile intuitive pour la gestion des tâches et des
+                                rappels. <a href="#" class="btn btn-link">Voir la démo</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
                         <a class="portfolio-link" href="#">
-                            <img class="img-fluid" src="https://via.placeholder.com/350x250" alt="">
+                            <img class="img-fluid" src="pexels-wdnet-230544.jpg" alt="Projet 3">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Projet 3</h4>
-                            <p class="text-muted">Description du projet</p>
+                            <h4>Plateforme de Blog</h4>
+                            <p class="text-muted">Une plateforme de blog avec des fonctionnalités de commentaire et de
+                                partage sur les réseaux sociaux. <a href="#" class="btn btn-link">Voir la démo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="#">
+                            <img class="img-fluid" src="pexels-wendywei-1662570.jpg" alt="Projet 4">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Dashboard Administratif</h4>
+                            <p class="text-muted">Un tableau de bord complet pour la gestion des utilisateurs et des
+                                statistiques. <a href="#" class="btn btn-link">Voir la démo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="#">
+                            <img class="img-fluid" src="pexels-cottonbro-5082579.jpg" alt="Projet 5">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Site Vitrine</h4>
+                            <p class="text-muted">Un site vitrine pour une entreprise de services, mettant en avant les
+                                prestations et les témoignages clients. <a href="#" class="btn btn-link">Voir la
+                                    démo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="#">
+                            <img class="img-fluid" src="pexels-wdnet-230544.jpg" alt="Projet 6">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Solution Cloud</h4>
+                            <p class="text-muted">Une solution cloud sécurisée pour le stockage et la gestion des
+                                données. <a href="#" class="btn btn-link">Voir la démo</a></p>
                         </div>
                     </div>
                 </div>
@@ -155,18 +333,230 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section class="blog bg-light py-5" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-4">
+                    <h2 class="section-heading">Mon Blog</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="blog-item">
+                        <a class="blog-link" href="#">
+                            <img class="img-fluid" src="pexels-fotios-photos-1092644.jpg" alt="Blog Post 1">
+                        </a>
+                        <div class="blog-caption">
+                            <h4>Les Tendances du Développement Web en 2024</h4>
+                            <p class="text-muted">Découvrez les dernières tendances et technologies en matière de
+                                développement web pour l'année 2024.</p>
+                            <div class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Auteur: Machaallah</span>
+                                <span class="date"><i class="fas fa-calendar"></i> Date: 22 juillet 2024</span>
+                                <span class="likes" data-likes="120">
+                                    <button class="like-btn" id="like-1">
+                                        <i class="fas fa-thumbs-up"></i> Likes: <span class="like-count">120</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="blog-item">
+                        <a class="blog-link" href="#">
+                            <img class="img-fluid" src="pexels-eyupcan-timur-424989336-27396757.jpg" alt="Blog Post 2">
+                        </a>
+                        <div class="blog-caption">
+                            <h4>Comment Créer une Application Mobile Réussie</h4>
+                            <p class="text-muted">Les étapes essentielles pour développer et lancer une application
+                                mobile qui cartonne.</p>
+                            <div class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Auteur: Machaallah</span>
+                                <span class="date"><i class="fas fa-calendar"></i> Date: 15 juillet 2024</span>
+                                <span class="likes" data-likes="95">
+                                    <button class="like-btn" id="like-2">
+                                        <i class="fas fa-thumbs-up"></i> Likes: <span class="like-count">95</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="blog-item">
+                        <a class="blog-link" href="#">
+                            <img class="img-fluid" src="pexels-pixabay-270360.jpg" alt="Blog Post 3">
+                        </a>
+                        <div class="blog-caption">
+                            <h4>Optimisation de la Performance Web</h4>
+                            <p class="text-muted">Comment améliorer la vitesse et les performances de votre site web
+                                pour une meilleure expérience utilisateur.</p>
+                            <div class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Auteur: Machaallah</span>
+                                <span class="date"><i class="fas fa-calendar"></i> Date: 10 août 2024</span>
+                                <span class="likes" data-likes="80">
+                                    <button class="like-btn" id="like-3">
+                                        <i class="fas fa-thumbs-up"></i> Likes: <span class="like-count">80</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact bg-light py-5" id="contact">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-primary">Me Contacter</h2>
+                    <hr class="my-4 mx-auto" style="width: 50%; border-top: 2px solid #007bff;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Informations de contact -->
+                    <div class="text-center mb-4">
+                        <p class="mb-1"><i class="fas fa-phone-alt"></i> Téléphone : +228 92 21 82 07</p>
+                        <p><i class="fas fa-envelope"></i> E-mail : <a href="mailto:machaallahadjibogou@gmail.com">machaallahadjibogou@gmail.com</a></p>
+                    </div>
+    
+                    <!-- Formulaire de contact -->
+                    <form id="contactForm" name="sentMessage" action="https://your-emailjs-endpoint" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Votre nom *" required="required"
+                                        data-validation-required-message="Veuillez entrer votre nom." />
+                                    <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="Votre email *" required="required"
+                                        data-validation-required-message="Veuillez entrer votre email." />
+                                    <div class="invalid-feedback">Veuillez entrer votre email.</div>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Votre téléphone *" required="required"
+                                        data-validation-required-message="Veuillez entrer votre numéro de téléphone." />
+                                    <div class="invalid-feedback">Veuillez entrer votre numéro de téléphone.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-textarea mb-md-0">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Votre message *" required="required"
+                                        data-validation-required-message="Veuillez entrer un message."></textarea>
+                                    <div class="invalid-feedback">Veuillez entrer un message.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center mt-4">
+                            <div id="success"></div>
+                            <button id="sendMessageButton" class="btn btn-primary btn-lg text-uppercase" type="submit">
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="m-0 text-center text-muted">&copy; 2024 Site de Développeur. Tous droits réservés.</p>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">© 2024 Machaallah le codeur</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap and JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const likeButtons = document.querySelectorAll('.likes');
+
+            likeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const likeCount = button.querySelector('.like-count');
+                    let likes = parseInt(button.getAttribute('data-likes'), 10);
+                    likes++;
+                    button.setAttribute('data-likes', likes);
+                    likeCount.textContent = likes;
+                });
+            });
+        });
+    </script>
+    <script>
+        // Custom JavaScript for form validation
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      // Remplacez 'your-public-key' par votre clé publique EmailJS
+      (function() {
+        emailjs.init("your-public-key");
+      })();
+    
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        emailjs.sendForm('your-service-id', 'your-template-id', this)
+          .then(function() {
+            alert('Message envoyé avec succès!');
+          }, function(error) {
+            alert('Erreur lors de l\'envoi du message: ' + JSON.stringify(error));
+          });
+      });
+    </script>
+    
+    
+
 </body>
+
 </html>
